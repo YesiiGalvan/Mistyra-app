@@ -1,24 +1,33 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>¡Bienvenida a Mistyra App!</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.title}>¡Bienvenida a Mistrya!</Text>
+      <Text style={styles.subtitle}>Tu app de afirmaciones y educación financiera</Text>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F2F2F2',
-    alignItems: 'center',
+    backgroundColor: '#fff7f0',
     justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20
   },
-  text: {
-    fontSize: 22,
+  title: {
+    fontSize: 28,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#3c1361',
+    textAlign: 'center',
+    marginBottom: 12,
+  },
+  subtitle: {
+    fontSize: 16,
+    color: '#5e548e',
+    textAlign: 'center',
   },
 });
